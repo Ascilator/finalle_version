@@ -49,6 +49,7 @@ a#login_pop:hover, a#join_pop:hover {
 .overlay:target {
   visibility: visible;
   opacity: 1;
+  z-index: 1000;
 }
 
 .popup {
