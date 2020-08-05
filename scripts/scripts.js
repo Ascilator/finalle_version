@@ -21,7 +21,25 @@
 
 
 
-
+	$('.input_item>input').on('focus', function(){
+		if ($(this).val() == 'Ваш E-mail' || $(this).val() == 'Ваше имя' || $(this).val() == 'Телефон') {
+			$(this).val('');
+		}
+	});
+	$('.input_item>input').on('blur', function(){
+		
+		if ($(this).val() == '') {
+			if($(this).attr('val') == '2'){
+				$(this).val('Ваше имя');
+			}
+			if($(this).attr('val') == '3'){
+				$(this).val('Телефон');
+			}
+			if($(this).attr('val') == '4'){
+				$(this).val('Ваш E-mail');
+			}
+		}
+	});
 
 
 
@@ -32,6 +50,11 @@
 		$('.picture_of_prod>div').replaceWith(pic);
 		$('.desc_of_prod>div').replaceWith(desc);
 		$('.price_of_prod>div').replaceWith(price);
+
+		var title = $(this).siblings('.item_title').children().text();
+		console.log(title);
+		$('#dis>input').val(title);
+		console.log($('#dis'));
 	});
 	
 	function tabs () {

@@ -52,7 +52,7 @@ a#login_pop:hover, a#join_pop:hover {
   z-index: 1000;
 }
 
-.popup {
+.popup, .popup_2 {
   background-color: #fff;
   border: 3px solid #fff;
   display: inline-block;
@@ -68,7 +68,17 @@ a#login_pop:hover, a#join_pop:hover {
   transition: opacity 0.5s, top 0.5s;
 }
 
+.popup_cont_2 {
+  width: 400px;
+}
+
 .overlay:target + .popup {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay:target + .popup_2 {
   top: 50%;
   opacity: 1;
   visibility: visible;
@@ -165,7 +175,7 @@ a#login_pop:hover, a#join_pop:hover {
 .form_cont .lower_form .price_of_prod {
   font-size: 25px;
 }
-.send_button {
+.send_button, .send_button_2, .form_btn_2 {
   width: 50%;
   padding: 20px 0;
   color: #fff;
@@ -177,22 +187,65 @@ a#login_pop:hover, a#join_pop:hover {
   cursor: pointer;
 }
 
-.send_button:hover {
+.send_button:hover, .send_button_2:hover, .form_btn_2:hover {
   background: #76EB48;
 }
 
-/*
-input{
-	width: 100%;
-	padding: 15px 15px 15px 25px;
-	box-sizing: border-box;
-	border: none;
-	background: rgba(235,235,235);
-	border-radius:  50px;
-	font-size: 20px;
-	font-family: Cuprum, sans-serif;
-	color: #6e6e6e;
+.send_button_2 {
+  width: 100%;
 }
-input:hover{
 
-}*/
+.form_btn_2 {
+  text-decoration: none;
+  text-align: center;
+}
+.form_btn_2 span {
+  color: #fff;
+}
+
+.form_cont_2 {
+  padding: 30px;
+}
+
+.input_item {
+  margin: 0 0 20px;
+}
+.input_item input {
+  width: 100%;
+  padding: 15px 15px 15px 25px;
+  box-sizing: border-box;
+  border: none;
+  background: #ebebeb;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: Cuprum, sans-serif;
+  color: #6e6e6e;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:active, textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}
