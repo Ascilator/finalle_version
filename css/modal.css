@@ -142,7 +142,7 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .form_cont .upper_form .desc_of_prod .item_text .options, .form_cont .upper_form .desc_of_prod .item_text .item_desc_title {
   color: #000;
-  font: bold 20px/16px Cuprum, sans-serif;
+  font: bold 20px/24px Cuprum, sans-serif;
   margin: 1em 0;
   text-transform: uppercase;
 }
