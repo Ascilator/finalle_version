@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru" >
     <head>  
-   <meta charset="UTF-8">
-	 
-	  <meta name="viewport" content="width=device-width"/>
-	
-	
-    <title>Товар</title>
-	<script src="https://kit.fontawesome.com/441aecb93e.js" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  
-  <link rel="stylesheet" href="css/modal.css">
- 
-  <link rel='stylesheet' href='css/styles_main.css'/>
-  <link rel="stylesheet" href="css/styles.css">
- <link rel="stylesheet" href="css/slider.css">
-	 
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CCuprum:400,700&amp;subset=all'/>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet"> 
- 
-</head>  
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width"/>
+
+
+		<title>Товар</title>
+		<script src="https://kit.fontawesome.com/441aecb93e.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+		<link rel="stylesheet" href="css/modal.css">
+		<link rel="stylesheet" href="css/styles_main.css">
+				
+
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/slider.css">
+
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CCuprum:400,700&amp;subset=all'/>
+		<link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet"> 
+
+	</head>  
 
 <body class="">
-    <div class="container">
-        <header class="header">            
-	        <div class="top-row clearfix">
-				<a class="logo-link" href="http://ma159.ru/" tabindex="0" accesskey="h" title="Перейти на главную">
-	            	<img class="logo-image" src="img/header/logo.png" width="295" height="41" alt="МедАльянс" data-pagespeed-url-hash="519136059" />
-	            </a>
-	          
-	            <ul class="header-menu-list clearfix">
-	                <li class="header-menu-item">
-	                    <a class="header-menu-link" href="page_2.html" tabindex="0">Акции</a>
-	                </li>
-	                <li class="header-menu-item">
-	                	<a class="header-menu-link" href="news.html" tabindex="0">Новости</a>
-	                </li>
-	                <li class="header-menu-item">
-	                	<a class="header-menu-link" href="page_4.html" tabindex="0">Доставка и оплата</a>
-					</li>
-	            	<li class="header-menu-item">
-	            		<a class="header-menu-link" href="price.html" tabindex="0">Прайс-лист</a>
-	            	</li>
-	                <li class="header-menu-item">
-	                	<a class="header-menu-link" href="page_5.html" tabindex="0">Каталоги</a>
-	                </li>
-	                <li class="header-menu-item">
-	                	<a class="header-menu-link" href="feedback.html" tabindex="0" accesskey="6" title="Контакты">Контакты</a>
-					</li>
-	            </ul>
-	        </div><!--/top-row-->
-	  </header>
-	<div class="slider_container">
+	<header class="header">            
+        <div class="header_cont">
+            <ul class="menu_list">
+                <li class="menu_link">
+                    <a class="menu_item" href="page_2.html" tabindex="0">Акции</a>
+                </li>
+                <li class= "menu_link">
+                	<a class= "menu_item" href="news.html" tabindex="0">Новости</a>
+                </li>
+                <li class= "menu_link">
+                	<a class= "menu_item" href="page_4.html" tabindex="0">Доставка и оплата</a>
+				</li>
+            	<li class= "menu_link">
+            		<a class="menu_item" href="price.html" tabindex="0">Прайс-лист</a>
+            	</li>
+                <li class= "menu_link">
+                	<a class="menu_item" href="page_5.html" tabindex="0">Каталоги</a>
+                </li>
+                <li class="menu_link">
+                	<a class= "menu_item" href="feedback.html" tabindex="0" accesskey="6" title="Контакты">Контакты</a>
+				</li>
+            </ul>
+        </div>
+  </header>
+	<div class="first_screen">
+		<div class="wrapper">
+			<div class="logo_cont">
+				<a href = '#'><img src='img/header/big_logo.png' alt=""></a>
+			</div>
+		</div>
+		<div class="scroll_btn" id = "scroll"><i class="fas fa-arrow-down"></i></div>
+	</div>
+	<div class="slider_container" id = "to_scroll">
 		<div class="slider_controls">
 			<div class="prev_control"><i class="fas fa-arrow-circle-right"></i></div>
 			<div class="next_control"><i class="fas fa-arrow-circle-right"></i></div>
@@ -64,25 +68,45 @@
 			<div class="slider_item"><img src="img/slider/respir.jpg" alt=""></div>
 		</div>
 	</div>
-	<div class="big_title"><span>Выберете категорию товаров</span></div>
+
+	<div class="why_us_block">
+		<div class="conteiner">
+			<div class="why_us_title">Почему мы?</div>
+			<div class="content_box">
+				<div class="why_us_item"><img src="img/why_us/pic_1.png" alt=""></div>
+				<div class="why_us_item"><img src="img/why_us/pic_2.png" alt=""></div>
+				<div class="why_us_item"><img src="img/why_us/pic_3.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+    <div class="container">
+        
+	
+	<div class="big_title"><span>самые популярные предложения</span></div>
   	<div class="content ">
   		<div class="tabs_container">
 			<div class="tabs">
 				<div class="__tab">
 					<div class="picture">
-						<div class="pic"><img src="img/products/mask.png" alt=""></div>
+						
 						<div class="text"><span>Маски для лица</span></div>
 					</div>
 				</div>
 				<div class="__tab __2">
 					<div class="picture">
-						<div class="pic"><img src="img/products/glove.png" alt=""></div>
+						
 						<div class="text"><span>Перчатки</span></div>
 					</div>
 				</div>
 				<div class="__tab">
 					<div class="picture">
-						<div class="pic"><img src="img/products/item_1.png" alt=""></div>
+						
 						<div class="text"><span>Спецодежда</span></div>
 					</div>
 				</div>
@@ -113,8 +137,9 @@
 			                                <span id="optionPrice_5960" class="current-price">50 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+							
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li> 
 						<li class="catalog-position_ ">
@@ -140,8 +165,9 @@
 			                                <span id="optionPrice_5960" class="current-price">7.5 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li> 
 						   
@@ -173,8 +199,9 @@
 			                                <span id="optionPrice_5960" class="current-price">15 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li> 
 						<li class="catalog-position_ ">
@@ -201,8 +228,9 @@
 			                                <span id="optionPrice_5960" class="current-price">15 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li> 
 						   
@@ -238,8 +266,9 @@
 			                                <span id="optionPrice_5960" class="current-price">898 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li> 
 						<li class="catalog-position_ ">
@@ -270,8 +299,9 @@
 			                                <span id="optionPrice_5960" class="current-price">729 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li> 
 						<li class="catalog-position_ ">
@@ -302,8 +332,9 @@
 			                                <span id="optionPrice_5960" class="current-price">716 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li> 
 						<li class="catalog-position_ ">
@@ -334,8 +365,9 @@
 			                                <span id="optionPrice_5960" class="current-price">675 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li> 
 						<li class="catalog-position_ ">
@@ -366,8 +398,9 @@
 			                                <span id="optionPrice_5960" class="current-price">777 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>  
 						<li class="catalog-position_ ">
@@ -398,8 +431,9 @@
 			                                <span id="optionPrice_5960" class="current-price">756 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -430,8 +464,9 @@
 			                                <span id="optionPrice_5960" class="current-price">851 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>  
 						<li class="catalog-position_ ">
@@ -462,8 +497,9 @@
 			                                <span id="optionPrice_5960" class="current-price">878 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -494,8 +530,9 @@
 			                                <span id="optionPrice_5960" class="current-price">1040 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -526,8 +563,9 @@
 			                                <span id="optionPrice_5960" class="current-price">1100 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -558,8 +596,9 @@
 			                                <span id="optionPrice_5960" class="current-price">1310 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -590,8 +629,9 @@
 			                                <span id="optionPrice_5960" class="current-price">1438 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -622,8 +662,9 @@
 			                                <span id="optionPrice_5960" class="current-price">1013 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -654,8 +695,9 @@
 			                                <span id="optionPrice_5960" class="current-price">1040 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -686,8 +728,9 @@
 			                                <span id="optionPrice_5960" class="current-price">1094 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -718,8 +761,9 @@
 			                                <span id="optionPrice_5960" class="current-price">770 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -750,8 +794,9 @@
 			                                <span id="optionPrice_5960" class="current-price">669 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -784,8 +829,9 @@
 			                                <span id="optionPrice_5960" class="current-price">702 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -816,8 +862,9 @@
 			                                <span id="optionPrice_5960" class="current-price">446 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -846,8 +893,9 @@
 			                                <span id="optionPrice_5960" class="current-price">88 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -873,8 +921,9 @@
 			                                <span id="optionPrice_5960" class="current-price">863 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 						<li class="catalog-position_ ">
@@ -900,8 +949,9 @@
 			                                <span id="optionPrice_5960" class="current-price">445 <abbr class='rouble' title='Знак рубля'>&#8399;</abbr></span>
 							            </span>
 									</div><!--/price-->
-								  	<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
+								  	
 								</div>
+								<a href="#login_form" id="login_pop" class="form_btn"><div class="order_btn"><span>Подробнее</span></div></a>
 							</div>
 						</li>
 			   		</ul>
@@ -1001,11 +1051,15 @@
 						<input autocomplete="off" class = '_form' val = "1" type="text" name = "form[]" value = "" disabled>
 					</div>
 					<div class="input_item">
+						<input autocomplete="off" class = '_form' val = "0" type="text" name = "form[]" value = "Количество">
+					</div>
+					<div class="input_item">
 						<input autocomplete="off" class = '_form' val = "2" type="text" name = "form[]" value = "Ваше имя">
 					</div>
 					<div class="input_item">
 						<input autocomplete="off" class = '_form' val = "3" type="text" name = "form[]" value = "Телефон">
 					</div>
+
 					<div class="input_item">
 						<input autocomplete="off" class = '_form' val = "4" type="text" name = "form[]" value = "Ваш E-mail">
 					</div>

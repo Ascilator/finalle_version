@@ -1,6 +1,8 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .main {
@@ -113,26 +115,30 @@ a#login_pop:hover, a#join_pop:hover {
   margin-bottom: 50px;
 }
 .form_cont .upper_form .picture_of_prod {
-  width: 150px;
+  display: block;
+  width: 200px;
   object-fit: contain;
+  height: 100%;
+}
+.form_cont .upper_form .picture_of_prod .left_part_img_cont {
+  height: 100%;
 }
 .form_cont .upper_form .picture_of_prod .catalog-photo-frame {
   text-align: center;
-  padding: 5px;
   box-sizing: border-box;
-  border: 4px solid #70c048;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .form_cont .upper_form .picture_of_prod .catalog-photo-frame img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  border: 4px solid #70c048;
+  padding: 5px;
 }
 .form_cont .upper_form .desc_of_prod {
-  flex: 1 1 auto;
-  margin-left: 50px;
-  max-width: 300px;
+  margin-left: 30px;
+  width: 300px;
 }
 .form_cont .upper_form .desc_of_prod .item_text .options, .form_cont .upper_form .desc_of_prod .item_text .item_desc_title {
   color: #000;
@@ -141,12 +147,13 @@ a#login_pop:hover, a#join_pop:hover {
   text-transform: uppercase;
 }
 .form_cont .upper_form .desc_of_prod .item_text .item_desc_title {
+  text-align: left;
   margin: 0em 0 0.5em;
 }
 .form_cont .upper_form .desc_of_prod .item_text .item_desc {
   margin: 1em 0 2em;
   padding: 0 5px 0 24px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.1;
 }
 .form_cont .upper_form .desc_of_prod .item_text .item_standart, .form_cont .upper_form .desc_of_prod .item_text .item_comp, .form_cont .upper_form .desc_of_prod .item_text .item_density, .form_cont .upper_form .desc_of_prod .item_text .item_color, .form_cont .upper_form .desc_of_prod .item_text .item_size, .form_cont .upper_form .desc_of_prod .item_text .item_tall, .form_cont .upper_form .desc_of_prod .item_text .aim {
@@ -174,6 +181,9 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .form_cont .lower_form .price_of_prod {
   font-size: 25px;
+}
+.form_cont .lower_form .price_of_prod .price-value span {
+  color: #70c048;
 }
 .send_button, .send_button_2, .form_btn_2 {
   width: 50%;
