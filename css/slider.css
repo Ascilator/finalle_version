@@ -46,16 +46,16 @@
 }
 
 .prev_control {
-  left: 0;
-  transform: translateY(-50%) translateX(-50%) rotate(180deg);
+  left: 25px;
+  transform: translateY(-50%) translateX(50%) rotate(180deg);
 }
 .prev_control:hover {
-  transform: translateY(-50%) translateX(-50%) rotate(540deg) scale(1.04);
+  transform: translateY(-50%) translateX(50%) rotate(540deg) scale(1.04);
 }
 .next_control {
-  right: 0;
-  transform: translateY(-50%) translateX(50%);
+  right: 25px;
+  transform: translateY(-50%) translateX(-50%);
 }
 .next_control:hover {
-  transform: translateY(-50%) translateX(50%) rotate(360deg) scale(1.04);
+  transform: translateY(-50%) translateX(-50%) rotate(360deg) scale(1.04);
 }
