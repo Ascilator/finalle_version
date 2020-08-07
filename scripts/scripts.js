@@ -19,7 +19,23 @@
 		pause: 2000,
 	});
 	
-	
+	$('#slider_sert').bxSlider({
+
+		infiniteLoop: true,
+		slideMargin: 90,
+		nextSelector: $('.next_arrow'),
+		prevText: '',
+		nextText: '',
+		prevSelector: $('.prev_arrow'),
+		controls: true,
+		minSlides: 1,
+		maxSlides: 4,
+		slideWidth: 0,
+		moveSlides: 1,
+		swipeThreshold: 50,
+		responsive: true,
+		
+	});
 	
 	$('.input_item>input').on('focus', function(){
 		if ($(this).val() == 'Ваш E-mail' || $(this).val() == 'Количество' || $(this).val() == 'Ваше имя' || $(this).val() == 'Телефон') {
