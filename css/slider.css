@@ -25,6 +25,8 @@
   position: absolute;
   top: 50%;
   z-index: 100;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s;
   color: #70c048;
 }
@@ -36,26 +38,38 @@
   width: 100%;
   height: 100%;
   display: block;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   border-radius: 50%;
   position: relative;
   z-index: 10;
 }
 .prev_control:hover, .next_control:hover {
+  -webkit-transform: rotate(360deg) scale(1.02);
+  -ms-transform: rotate(360deg) scale(1.02);
   transform: rotate(360deg) scale(1.02);
 }
 
 .prev_control {
   left: 25px;
+  -webkit-transform: translateY(-50%) translateX(50%) rotate(180deg);
+  -ms-transform: translateY(-50%) translateX(50%) rotate(180deg);
   transform: translateY(-50%) translateX(50%) rotate(180deg);
 }
 .prev_control:hover {
+  -webkit-transform: translateY(-50%) translateX(50%) rotate(540deg) scale(1.04);
+  -ms-transform: translateY(-50%) translateX(50%) rotate(540deg) scale(1.04);
   transform: translateY(-50%) translateX(50%) rotate(540deg) scale(1.04);
 }
 .next_control {
   right: 25px;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
 }
 .next_control:hover {
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(360deg) scale(1.04);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(360deg) scale(1.04);
   transform: translateY(-50%) translateX(-50%) rotate(360deg) scale(1.04);
 }

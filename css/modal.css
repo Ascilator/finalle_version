@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -45,6 +46,8 @@ a#login_pop:hover, a#join_pop:hover {
   top: 0;
   visibility: hidden;
   z-index: 1;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -65,8 +68,12 @@ a#login_pop:hover, a#join_pop:hover {
   top: 40%;
   visibility: hidden;
   z-index: 1000;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-radius: 10px;
+  -webkit-transition: opacity 0.5s, top 0.5s;
+  -o-transition: opacity 0.5s, top 0.5s;
   transition: opacity 0.5s, top 0.5s;
 }
 
@@ -108,8 +115,14 @@ a#login_pop:hover, a#join_pop:hover {
 }
 
 .form_cont .upper_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 500px;
   margin-bottom: 50px;
@@ -117,6 +130,7 @@ a#login_pop:hover, a#join_pop:hover {
 .form_cont .upper_form .picture_of_prod {
   display: block;
   width: 200px;
+  -o-object-fit: contain;
   object-fit: contain;
   height: 100%;
 }
@@ -125,9 +139,16 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .form_cont .upper_form .picture_of_prod .catalog-photo-frame {
   text-align: center;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100%;
 }
@@ -175,8 +196,14 @@ a#login_pop:hover, a#join_pop:hover {
   margin: 0 0 20px;
 }
 .form_cont .lower_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .form_cont .lower_form .price_of_prod {
@@ -223,6 +250,7 @@ a#login_pop:hover, a#join_pop:hover {
 .input_item input {
   width: 100%;
   padding: 15px 15px 15px 25px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
   background: #ebebeb;
